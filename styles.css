@@ -1,0 +1,109 @@
+.imagen {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid;
+    display: block;
+    margin: 10px auto;
+    
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.principal {
+    text-align: center;
+    width: 100%; /* toda la pantalla  */
+    background-color: rgba(208, 223, 245, 0.432);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    min-height: calc(100vh - 40px);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #3c8ce7;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.iconos {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.redes {
+    gap: 20px;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.buttons {
+    margin-top: 20px;
+    
+}
+.buttons button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #3ca3e7;
+    
+}
+
+/* Media  para pantallas medianas y pequeñas */
+@media (max-width: 768px) 
+{
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .descripcion {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .buttons button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
